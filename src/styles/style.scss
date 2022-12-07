@@ -9,10 +9,15 @@ body {
 p {
     color: #d2d2d2;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 .main {
     max-width: 1000px;
     width: 1000px;
     margin: 0 auto;
+    display: flex;
 }
 .sidebar {
     background-color: #202020;
@@ -112,7 +117,7 @@ p {
         height: 1px;
         background-color: #1c1c1c;
     }
-    &__buttons{
+    &__buttons {
         margin-top: 30px;
     }
     &__btn {
@@ -130,8 +135,79 @@ p {
         box-shadow: 0px 7px 17px -10px rgba(242, 63, 63, 0.2);
         cursor: pointer;
     }
-    .clr-red{
+    .clr-red {
         margin-right: 20px;
-        background-color: #ED3024;
+        background-color: #ed3024;
+    }
+}
+.navigation {
+    background-color: #0d0d0d;
+    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
+    &__menu {
+        display: flex;
+        list-style-type: none;
+    }
+    &__item {
+        position: relative;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+        text-transform: uppercase;
+        padding: 13px;
+        
+    }
+    &__item-profil{
+        position: absolute;
+        right: 0;
+    }
+    &__item-rect {
+        padding-right: 29px;
+        
+    }
+    &__item-rect:hover .navigation__menu-article{
+        display: block;
+    }
+    &__item-rect:hover{
+        background-color: #3137c9;
+    }
+    &__item-rect::after {
+        content: "";
+        margin-left: 9px;
+
+        width: 10px;
+        height: 5px;
+        position: absolute;
+        top: calc(50% - 3px);
+        background-image: url(../images/rect.svg);
+    }
+    &__menu-article {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 12px;
+        background-color: #3137c9;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 5px 5px;
+        max-width: 165px;
+        margin-left: -13px;
+        margin-top: 13px;
+        min-width: 165px;
+        .navigation__item {
+            margin: 10px 0;
+            padding: 0;
+            text-transform: none;
+            font-size: 12px;
+            line-height: 14px;
+            white-space: nowrap;
+        }
+        .navigation__item:first-child {
+            margin-top: 0;
+        }
+        .navigation__item:last-child {
+            margin-bottom: 0;
+        }
     }
 }

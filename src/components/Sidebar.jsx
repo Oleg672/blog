@@ -1,8 +1,6 @@
 import React from "react";
 import sidebar__Img from "../images/sidebar.png"
 import sidebar__foto from "../images/foto.png"
-<sidebar></sidebar>
-
 function Sidebar(props) {
     return (
         <div className="sidebar">
