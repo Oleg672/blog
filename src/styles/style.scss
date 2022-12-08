@@ -140,10 +140,24 @@ a {
         background-color: #ed3024;
     }
 }
+.rightContentWrap {
+    display: flex;
+    flex-direction: column;
+}
 .navigation {
-    background-color: #0d0d0d;
-    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
+    &__wrap {
+        background-color: #0d0d0d;
+        box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        height: 40px;
+        align-items: center;
+        margin-top: 2px;
+    }
     &__menu {
+        z-index: 2;
         display: flex;
         list-style-type: none;
     }
@@ -156,20 +170,19 @@ a {
         line-height: 13px;
         text-transform: uppercase;
         padding: 13px;
-        
     }
-    &__item-profil{
-        position: absolute;
-        right: 0;
+    &__item-profil {
+        display: flex;
+        align-items: center;
+        padding-right: 0;
     }
     &__item-rect {
         padding-right: 29px;
-        
     }
-    &__item-rect:hover .navigation__menu-article{
+    &__item-rect:hover .navigation__menu-article {
         display: block;
     }
-    &__item-rect:hover{
+    &__item-rect:hover {
         background-color: #3137c9;
     }
     &__item-rect::after {
@@ -210,4 +223,136 @@ a {
             margin-bottom: 0;
         }
     }
+    &__search {
+        background-color: #202020;
+        height: 40px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        padding-left: 20px;
+        min-width: 212px;
+        color: rgba(255, 255, 255, 0.4);
+        margin-left: 30px;
+        outline: none;
+        border: 1px solid #202020;
+    }
+    &__search[type="text"]:focus {
+        color: #fff;
+        border: 1px solid rgb(45, 45, 45);
+    }
+}
+
+.main-content {
+    width: 600px;
+    margin: 0 auto;
+}
+.picture {
+    &__story {
+        margin-top: 60px;
+    }
+    &__list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        cursor: pointer;
+    }
+    &__title {
+        position: absolute;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        color: #ffffff;
+        margin-left: 14px;
+        margin-top: 14px;
+        z-index: 1;
+    }
+    &__storyImg {
+        width: 140px;
+        height: 195px;
+        border-radius: 8px;
+        filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
+    }
+    &__storyDate {
+        position: absolute;
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: right;
+        text-transform: uppercase;
+        color: #ffffff;
+        right: 0px;
+        margin-right: 12px;
+        bottom: 16px;
+    }
+}
+.addMessage {
+    margin-top: 30px;
+    background-color: #121212;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.45);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    &__input {
+        background-color: #121212;
+        padding: 28px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        padding-left: 20px;
+        flex: 1;
+        margin-right: 20px;
+        color: #D2D2D2;
+        outline: none;
+        border: 1px solid #121212;
+        max-width: 447px;
+        flex-wrap: wrap;
+        resize: none;
+
+    }
+    &__input[type="text"]:focus {
+        color: #fff;
+        border: 1px solid rgb(45, 45, 45);
+    }
+    &__buttons{
+        display: flex;
+        align-items: center;
+    }
+    &__img {
+        background-color: #ebebeb;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+    }
+    &__send {
+        background-color: #3137c9;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        text-align: center;
+        border: none;
+        margin-right: 20px;
+        margin-left: 15px;
+        cursor: pointer;
+    }
+    &__send-img {
+        margin-top: 2px;
+        margin-left: 2px;
+        
+    }
+    
 }
