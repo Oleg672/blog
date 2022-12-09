@@ -23,7 +23,7 @@ a {
     background-color: #202020;
     max-width: 300px;
     box-shadow: 5px 0px 15px rgba(5, 5, 5, 0.1);
-    height: 100vh;
+    flex: 1;
     display: flex;
     flex-direction: column;
     &__inner {
@@ -364,21 +364,25 @@ a {
         border-radius: 5px;
     }
     &__picture {
+        width: 100%;
     }
-    &__video{
+    &__video {
+        cursor: pointer;
         position: relative;
-        
-    }
-    &__video::after{
-        content: '';
-        position: absolute;
-        left: 50%;
-        right: 50%;
-        width: 50px;
-        height: 50px;
         display: block;
+    }
+    &__video::before {
+        content: "";
+        width: 68px;
+        height: 75px;
+        left: 50%;
+        margin-left: -34px;
+        top: 50%;
+        margin-top: -37.5px;
+        display: block;
+        position: absolute;
+        z-index: 2;
         background-image: url(../images/videoPlay.svg);
-
     }
     &__item-inner {
         padding: 25px;
@@ -403,9 +407,9 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-top: 21px;
     }
     &__footer-Wrapp {
-        margin-top: 21px;
         font-family: "Lato";
         font-style: normal;
         font-weight: 400;
@@ -417,7 +421,19 @@ a {
     }
     &__categories {
         margin-left: 35px;
-        font-size: 14px;
+        font-size: 15px;
+        position: relative;
+    }
+    &__categories::before {
+        content: "";
+        position: relative;
+        left: -10px;
+        top: 0;
+        height: 6px;
+        width: 6px;
+        background-color: #c4c4c4;
+        display: inline-block;
+        border-radius: 50%;
     }
     &__link {
         font-family: "Roboto";
@@ -433,6 +449,9 @@ a {
 .NavBtn {
     margin: 75px 0;
     text-align: center;
+    &__btn:hover {
+        box-shadow: 0px 0px 10px rgba(58, 108, 234, 0.15);
+    }
     &__btn {
         margin: 5px;
         width: 40px;

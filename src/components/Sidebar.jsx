@@ -4,6 +4,7 @@ import sidebar__foto from "../images/foto.png"
 function Sidebar(props) {
     return (
         <div className="sidebar">
+            
             <div className="sidebar__top">
                 <img src={sidebar__Img} alt="" className="sidebar__topImg" />
                 <div className="sidebar__foto-wrapper">
@@ -29,9 +30,6 @@ function Sidebar(props) {
                     <button className="sidebar__btn">Написать мне</button>
                 </div>
             </div>
-
-
-
         </div>
     );
 }
