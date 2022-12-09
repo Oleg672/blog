@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import AddMessage from './AddMessage';
+import Articles from './Articles';
+import ArticlesFooterBtn from './ArticlesFooterBtn';
 import PictureStoty from './PictureStoty';
 
 class RightContent extends Component {
@@ -8,6 +10,8 @@ class RightContent extends Component {
             <div className="main-content">
                 <PictureStoty />
                 <AddMessage />
+                <Articles />
+                <ArticlesFooterBtn />
             </div>
 
 
