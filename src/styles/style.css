@@ -479,4 +479,14 @@ a {
 .NavBtn__btn:nth-child(1) {
   background-color: #1a1a1a;
   color: #373737;
+}
+
+@media (max-width: 320px) {
+  .sidebar {
+    display: none;
+  }
+  .main {
+    min-width: 320px;
+    width: 320px;
+  }
 }/*# sourceMappingURL=style.css.map */

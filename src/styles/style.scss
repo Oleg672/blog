@@ -478,3 +478,14 @@ a {
         color: #373737;
     }
 }
+
+@media (max-width: 320px) {
+
+    .sidebar {
+        display: none;
+    }
+    .main{
+        min-width: 320px;
+        width: 320px;
+    }
+}    
