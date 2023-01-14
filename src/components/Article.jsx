@@ -7,6 +7,7 @@ function Article({ obj }) {
             {(obj.img) ? (<img src={process.env.PUBLIC_URL + obj.img} alt="contetnt" className="articles__picture" />) : (<></>)}
             {(obj.video) ? (<div className="articles__video"><img src={process.env.PUBLIC_URL + obj.video} alt="contetnt" className="articles__picture" /> </div>) : (<></>)}
             <div className="articles__item-inner">
+                <h2 className='articles__title'>{obj.title}</h2>
                 <p className="articles__description">{obj.description}</p>
                 <div className="articles__footer">
                     <div className="articles__footer-Wrapp">

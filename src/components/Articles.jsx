@@ -17,7 +17,7 @@ function Articles(props) {
             id: 2,
             img: "/ImagesArticle/content1.png",
             video: "",
-            title: "Купил новый ноутбук за 150 000 руб",
+            title: "Как писать код быстро и безболезненно?",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "22.06.2020",
             category: "продвижение видео",

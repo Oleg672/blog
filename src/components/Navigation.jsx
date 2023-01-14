@@ -6,7 +6,7 @@ function Navigation(props) {
     return (
         <nav className='navigation__wrap'>
             <Gamburger />
-            {/* <Menu /> */}
+            <Menu />
             <div className="navigation__item navigation__item-profil"> 
             {/* <a href="#">Профиль</a> */}
                 <div className="navigation__searchWrap">
