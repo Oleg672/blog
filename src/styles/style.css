@@ -42,12 +42,11 @@ a {
   position: relative;
 }
 .sidebar__foto-wrapper {
-  position: absolute;
+  position: relative;
   margin-top: -62px;
-  left: calc(50% - 70px);
+  text-align: center;
 }
 .sidebar__title {
-  margin-top: 68px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -509,6 +508,41 @@ a {
 @media (max-width: 320px) {
   .sidebar {
     display: none;
+    background-color: #0D0D0D;
+  }
+  .sidebar__social,
+.sidebar__description {
+    display: none;
+  }
+  .sidebar__top {
+    height: 100px;
+    overflow: hidden;
+  }
+  .sidebar__topImg {
+    width: 100%;
+    position: relative;
+    display: block;
+    top: -36px;
+  }
+  .sidebar__mobileWrapp {
+    display: flex;
+    position: relative;
+  }
+  .sidebar__mobileWrapp::after {
+    content: "";
+    background-color: #1C1C1C;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+  .sidebar__foto-wrapper {
+    margin-top: -25px;
+  }
+  .sidebar__foto {
+    width: 80px;
   }
   .rightContentWrap {
     width: 100%;
@@ -572,9 +606,6 @@ a {
   }
   .navigation__item {
     padding: 0;
-  }
-  .navigation__menu {
-    display: none;
   }
   .gamburger {
     display: block;

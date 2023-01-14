@@ -36,12 +36,11 @@ a {
         position: relative;
     }
     &__foto-wrapper {
-        position: absolute;
+        position: relative;
         margin-top: -62px;
-        left: calc(50% - 70px);
+        text-align: center;
     }
     &__title {
-        margin-top: 68px;
         font-family: "Roboto";
         font-style: normal;
         font-weight: 400;
@@ -156,7 +155,7 @@ a {
         align-items: center;
         margin-top: 2px;
     }
-    
+
     &__menu {
         z-index: 2;
         display: flex;
@@ -245,18 +244,17 @@ a {
         border: 1px solid rgb(45, 45, 45);
     }
 }
-.gamburger{
+.gamburger {
     display: block;
     margin-left: 15px;
-    span{
+    span {
         display: block;
         width: 30px;
         height: 2px;
         background-color: white;
     }
-    span:nth-child(2){
+    span:nth-child(2) {
         margin: 7px 0;
-        
     }
 }
 .main-content {
@@ -495,23 +493,59 @@ a {
         color: #373737;
     }
 }
-.navigation__menu{
+.navigation__menu {
     display: flex;
 }
-.gamburger{
+.gamburger {
     display: none;
 }
 
 @media (max-width: 320px) {
     .sidebar {
+         display: none;
+        background-color: #0D0D0D;
+    }
+    .sidebar__social,
+    .sidebar__description {
         display: none;
+    }
+    .sidebar__top {
+        height: 100px;
+        overflow: hidden;
+    }
+    .sidebar__topImg {
+        width: 100%;
+        position: relative;
+        display: block;
+        top: -36px;
+    }
+    .sidebar__mobileWrapp{
+        display: flex;
+        position: relative;
+    }
+    .sidebar__mobileWrapp::after{
+        content: '';
+        background-color: #1C1C1C;
+        display: block;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        position: absolute;
+
+    }
+    .sidebar__foto-wrapper{
+        margin-top: -25px;
+    }
+    .sidebar__foto{
+        width: 80px;
     }
     .rightContentWrap {
         width: 100%;
         max-width: 290px;
         position: relative;
     }
-    .App{
+    .App {
         overflow: hidden;
     }
     .main-content {
@@ -555,24 +589,23 @@ a {
         line-height: 14px;
         display: flex;
         flex-direction: column;
-        align-items:baseline;
+        align-items: baseline;
     }
-    .articles__footer-Wrapp{
+    .articles__footer-Wrapp {
         margin-bottom: 13px;
     }
-    .articles__item-inner{
-        padding:13px 15px;
+    .articles__item-inner {
+        padding: 13px 15px;
     }
     .navigation__search {
         margin-left: 0;
     }
-    .navigation__item{
+    .navigation__item {
         padding: 0;
     }
-    .navigation__menu{
-        display: none;
-    }
-    .gamburger{
+    
+    .gamburger {
         display: block;
     }
+    
 }
