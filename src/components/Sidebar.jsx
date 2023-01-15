@@ -3,7 +3,7 @@ import sidebar__Img from "../images/sidebar.png"
 import sidebar__foto from "../images/foto.png"
 import Menu from "./Menu";
 import Media from 'react-media';
-function Sidebar(props) {
+function Sidebar() {
     return (
         <div  className="sidebar">
             

@@ -4,15 +4,16 @@ import Menu from './Menu';
 import Media from 'react-media';
 
 function Navigation(props) {
+    
     return (
         <nav className='navigation__wrap'>
             
-            <Media query="(max-width: 320px)" render={() =>
+            <Media query="(max-width: 425px)" render={() =>
                 (
-                    <Gamburger />
+                    <Gamburger onClickGamburger1= {() => props.onClickGamburger(true) } />
                 )}
             />
-            <Media query="(min-width: 321px)" render={() =>
+            <Media query="(min-width: 426px)" render={() =>
                 (
                     <Menu />
                 )}
