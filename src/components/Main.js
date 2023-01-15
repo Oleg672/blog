@@ -6,6 +6,7 @@ import Media from 'react-media';
 
 function Main() {
     const [sidebarOpened, setSidebarOpened] = React.useState(false);
+    
     return (
         <div className='main'>
             <Media query="(max-width: 425px)" render={() =>
@@ -20,7 +21,7 @@ function Main() {
             />
            {/* {sidebarOpened ? <Sidebar /> : null} */}
             <div className='rightContentWrap'>
-                <Navigation onClickGamburger= {() => setSidebarOpened(!sidebarOpened) }/>
+                <Navigation  sidebarOpened onClickGamburger= {() => setSidebarOpened(!sidebarOpened)} />
                 <RightContent />
             </div>
 

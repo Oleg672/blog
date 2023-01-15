@@ -5,8 +5,8 @@ import Menu from "./Menu";
 import Media from 'react-media';
 function Sidebar() {
     return (
-        <div  className="sidebar">
-            
+        <div className="sidebar">
+
             <div className="sidebar__top">
                 <img src={sidebar__Img} alt="" className="sidebar__topImg" />
 
@@ -28,12 +28,13 @@ function Sidebar() {
                     <a href="#" className="sidebar__social-pinterest"></a>
 
                 </div>
-                <Media query="(max-width: 320px)" render={() =>
+                <Media query="(max-width: 425px)" render={() =>
                 (
                     <Menu />
                 )}
                 />
-                
+
+
                 <p className="sidebar__description">
                     Front-end разработчик. Практик верстки сайтов.
                     Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
