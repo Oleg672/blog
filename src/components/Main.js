@@ -38,6 +38,7 @@ function Main() {
                     
                         <Routes>
 
+                            <Route path='/blog' element={<Home />} />
                             <Route path='/' element={<Home />} />
                             <Route path='Works' element={<Works />} />
                             {/* <Route exact path="" component={Works1}/> */}

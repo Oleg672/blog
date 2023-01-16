@@ -5,7 +5,7 @@ function Menu(props) {
     const { Opened, setOpened } = useContext(SidebarContext)
     return (
         <ul className="navigation__menu">
-            <li className="navigation__item" onClick={() => {setOpened(!Opened);}}> <NavLink to="/">Главная</NavLink></li>
+            <li className="navigation__item" onClick={() => {setOpened(!Opened);}}> <NavLink to="/blog">Главная</NavLink></li>
             <li className="navigation__item navigation__item-rect"onClick={() => {setOpened(!Opened);}}><NavLink to="/Works">Статьи</NavLink>
                 <ul className="navigation__menu-article">
                     <li className="navigation__item"onClick={() => {setOpened(!Opened);}}> <a href="#">Создание сайтов</a></li>
