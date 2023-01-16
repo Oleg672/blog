@@ -1,20 +1,28 @@
-import React, { useContext }  from 'react';
+import React, { useContext } from 'react';
 import Navigation from './Navigation';
 import Home from './RightContent';
 import Sidebar from './Sidebar';
 import Media from 'react-media';
 import Works from './MyWorks/Works';
 import { SidebarContext } from '../providers/SidebarProvider';
-import {BrowserRouter as Router, Routes, Route  } from 'react-router-dom';
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+    Link
+} from "react-router-dom";
 
 function Main() {
-    const {Opened,setOpened}=useContext(SidebarContext)
+    const { Opened, setOpened } = useContext(SidebarContext)
     const [worksOpened, setWorksOpened] = React.useState(false);
+    
     return (
+
         <div className='main'>
+           
             <Media query="(max-width: 425px)" render={() =>
             (
-                Opened ? <Sidebar onClickMyWorks={() => setWorksOpened(!worksOpened)}/> : null
+                Opened ? <Sidebar onClickMyWorks={() => setWorksOpened(!worksOpened)} /> : null
             )}
             />
             <Media query="(min-width: 1024px)" render={() =>
@@ -26,14 +34,18 @@ function Main() {
             <div className='rightContentWrap'>
                 <Navigation />
                 <div className="main-content">
-                    <Router>
+                    <BrowserRouter>
                         <Routes>
-                            <Route path="sds" element={<Home /> }/>
+
+                            <Route path='/' element={<Home />} />
+                            <Route path='Works' element={<Works />} />
                             {/* <Route exact path="" component={Works1}/> */}
                         </Routes>
-                    </Router>
+                    </BrowserRouter>
+
+
                     {/* {worksOpened ? <Works /> : <RightContent />}</div> */}
-            </div>
+                </div>
 
             </div>
         </div>
