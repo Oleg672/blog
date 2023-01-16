@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
+import { NavLink } from 'react-router-dom';
 import { SidebarContext } from '../providers/SidebarProvider';
 function Menu(props) {
     const { Opened, setOpened } = useContext(SidebarContext)
     return (
         <ul className="navigation__menu">
-            <li className="navigation__item" onClick={() => {setOpened(!Opened);}}> <a href="#">Главная</a></li>
-            <li className="navigation__item navigation__item-rect"onClick={() => {setOpened(!Opened);}}><a href="#">Статьи</a>
+            <li className="navigation__item" onClick={() => {setOpened(!Opened);}}> <NavLink to="/">Главная</NavLink></li>
+            <li className="navigation__item navigation__item-rect"onClick={() => {setOpened(!Opened);}}><NavLink to="/Works">Статьи</NavLink>
                 <ul className="navigation__menu-article">
                     <li className="navigation__item"onClick={() => {setOpened(!Opened);}}> <a href="#">Создание сайтов</a></li>
                     <li className="navigation__item"onClick={() => {setOpened(!Opened);}}><a href="#">Интернет-маркетинг</a></li>

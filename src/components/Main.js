@@ -9,7 +9,8 @@ import {
     BrowserRouter,
     Routes,
     Route,
-    Link
+    Link,
+    NavLink
 } from "react-router-dom";
 
 function Main() {
@@ -19,7 +20,6 @@ function Main() {
     return (
 
         <div className='main'>
-           
             <Media query="(max-width: 425px)" render={() =>
             (
                 Opened ? <Sidebar onClickMyWorks={() => setWorksOpened(!worksOpened)} /> : null
@@ -34,14 +34,15 @@ function Main() {
             <div className='rightContentWrap'>
                 <Navigation />
                 <div className="main-content">
-                    <BrowserRouter>
+                    
+                    
                         <Routes>
 
                             <Route path='/' element={<Home />} />
                             <Route path='Works' element={<Works />} />
                             {/* <Route exact path="" component={Works1}/> */}
                         </Routes>
-                    </BrowserRouter>
+                    
 
 
                     {/* {worksOpened ? <Works /> : <RightContent />}</div> */}
