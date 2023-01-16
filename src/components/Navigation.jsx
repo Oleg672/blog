@@ -9,7 +9,7 @@ function Navigation(props) {
             
             <Media query="(max-width: 425px)" render={() =>
                 (
-                    <Gamburger sidebarOpened onClickGamburger1= {() => props.onClickGamburger(true) } />
+                    <Gamburger  />
                 )}
             />
             <Media query="(min-width: 426px)" render={() =>

@@ -1,9 +1,11 @@
-import React from "react";
+import React , { useContext }  from "react";
 import sidebar__Img from "../images/sidebar.png"
 import sidebar__foto from "../images/foto.png"
 import Menu from "./Menu";
 import Media from 'react-media';
+import { SidebarContext } from '../providers/SidebarProvider';
 function Sidebar(props) {
+    const {Opened,setOpened}=useContext(SidebarContext)
     return (
         <div className="sidebar">
 
@@ -40,7 +42,12 @@ function Sidebar(props) {
                     Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
                 </p>
                 <div className="sidebar__buttons">
-                    <button className="sidebar__btn clr-red" onClick={props.onClickMyWorks}>Мои работы</button>
+                    <button className="sidebar__btn clr-red" onClick={() => 
+                    { 
+                        setOpened(!Opened);
+                        props.onClickMyWorks();
+                    }
+                     }>Мои работы</button>
                     <button className="sidebar__btn">Написать мне</button>
                 </div>
             </div>
