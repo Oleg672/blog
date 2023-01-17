@@ -4,6 +4,7 @@ import Home from './RightContent';
 import Sidebar from './Sidebar';
 import Media from 'react-media';
 import Works from './MyWorks/Works';
+import ArticlePage from './ArticlePage';
 import { SidebarContext } from '../providers/SidebarProvider';
 import {
     BrowserRouter,
@@ -12,6 +13,7 @@ import {
     Link,
     NavLink
 } from "react-router-dom";
+
 
 function Main() {
     const { Opened, setOpened } = useContext(SidebarContext)
@@ -37,10 +39,10 @@ function Main() {
                     
                     
                         <Routes>
-
                             <Route path='/blog' element={<Home />} />
                             <Route path='/' element={<Home />} />
                             <Route path='Works' element={<Works />} />
+                            <Route path='ArticlePage' element={<ArticlePage />} />
                             {/* <Route exact path="" component={Works1}/> */}
                         </Routes>
                     

@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Article({ obj }) {
     return (
@@ -14,7 +15,7 @@ function Article({ obj }) {
                         <span className="articles__date">{obj.date}</span>
                         {(obj.category) ? (<span className="articles__categories">{obj.category}</span>) : (<></>)}
                     </div>
-                    {(obj.opened) ? (<a href="#" className="articles__link">читать</a>) : (<a href="#" className="articles__link">оставить комментарий</a>)}
+                    {(obj.opened) ? (<NavLink to="/ArticlePage" className="articles__link">читать</NavLink>) : (<a href="#" className="articles__link">оставить комментарий</a>)}
 
                 </div>
             </div>

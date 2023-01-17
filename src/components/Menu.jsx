@@ -6,7 +6,7 @@ function Menu(props) {
     return (
         <ul className="navigation__menu">
             <li className="navigation__item" onClick={() => {setOpened(!Opened);}}> <NavLink to="/blog">Главная</NavLink></li>
-            <li className="navigation__item navigation__item-rect"onClick={() => {setOpened(!Opened);}}><NavLink to="/Works">Статьи</NavLink>
+            <li className="navigation__item navigation__item-rect"><NavLink to="/">Статьи</NavLink>
                 <ul className="navigation__menu-article">
                     <li className="navigation__item"onClick={() => {setOpened(!Opened);}}> <a href="#">Создание сайтов</a></li>
                     <li className="navigation__item"onClick={() => {setOpened(!Opened);}}><a href="#">Интернет-маркетинг</a></li>
