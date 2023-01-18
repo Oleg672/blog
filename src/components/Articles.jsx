@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Article from './Article';
-
+import { CategoriesContext } from '../providers/CategoriesProvider';
 function Articles() {
+    const { Categories, setCategories } = useContext(CategoriesContext)
     const articles = [
         {
             id: 1,
@@ -20,7 +21,7 @@ function Articles() {
             title: "Как писать код быстро и безболезненно?",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "22.06.2020",
-            category: "продвижение видео",
+            category: "Продвижение видео",
             opened: true
         },
         {
@@ -30,7 +31,7 @@ function Articles() {
             title: "Купил новый ноутбук за 150 000 руб",
             description: "",
             date: "22.06.2020",
-            category: "продвижение видео",
+            category: "Продвижение видео",
             opened: false
         },
         {
@@ -40,7 +41,7 @@ function Articles() {
             title: "Как я сходил на FrontEnd Conf 2021",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "21.06.2020",
-            category: "создание сайтов",
+            category: "Cоздание сайтов",
             opened: true
         },
         {
@@ -60,7 +61,7 @@ function Articles() {
             title: "Как писать код быстро и безболезненно?",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "22.06.2020",
-            category: "продвижение видео",
+            category: "Продвижение видео",
             opened: true
         },
         {
@@ -70,7 +71,7 @@ function Articles() {
             title: "Купил новый ноутбук за 150 000 руб",
             description: "",
             date: "22.06.2020",
-            category: "продвижение видео",
+            category: "Продвижение видео",
             opened: false
         },
         {
@@ -80,7 +81,7 @@ function Articles() {
             title: "Как я сходил на FrontEnd Conf 2021",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "21.06.2020",
-            category: "создание сайтов",
+            category: "Cоздание сайтов",
             opened: true
         },
         {
@@ -100,7 +101,7 @@ function Articles() {
             title: "Как писать код быстро и безболезненно?",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "22.06.2020",
-            category: "продвижение видео",
+            category: "Продвижение видео",
             opened: true
         },
         {
@@ -110,7 +111,7 @@ function Articles() {
             title: "Купил новый ноутбук за 150 000 руб",
             description: "",
             date: "22.06.2020",
-            category: "продвижение видео",
+            category: "Продвижение видео",
             opened: false
         },
         {
@@ -120,7 +121,7 @@ function Articles() {
             title: "Как я сходил на FrontEnd Conf 2021",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "21.06.2020",
-            category: "создание сайтов",
+            category: "Cоздание сайтов",
             opened: true
         },
         {
@@ -130,7 +131,7 @@ function Articles() {
             title: "",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "21.06.2020",
-            category: "",
+            category: "Интернет-маркетинг",
             opened: true
         },
         {
@@ -140,7 +141,7 @@ function Articles() {
             title: "Как писать код быстро и безболезненно?",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "22.06.2020",
-            category: "продвижение видео",
+            category: "Продвижение видео",
             opened: true
         },
         {
@@ -150,7 +151,7 @@ function Articles() {
             title: "Купил новый ноутбук за 150 000 руб",
             description: "",
             date: "22.06.2020",
-            category: "продвижение видео",
+            category: "Продвижение видео",
             opened: false
         },
         {
@@ -160,17 +161,25 @@ function Articles() {
             title: "Как я сходил на FrontEnd Conf 2021",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.",
             date: "21.06.2020",
-            category: "создание сайтов",
+            category: "Cоздание сайтов",
             opened: true
         }
     ]
+
+
     return (
         <main className='articles'>
             <ul className="articles__list">
-                {articles.map((obj) => (
-                    < Article key={obj.id} obj={obj} />
-                    
-                ))}
+
+                {Categories ? 
+                    articles.filter(elem => elem.category === Categories).map((obj) => (
+                        < Article key={obj.id} obj={obj} />
+
+                    ))
+                    :
+                    articles.map((obj) => (
+                        < Article key={obj.id} obj={obj} />))
+                    }
             </ul>
         </main>
     );

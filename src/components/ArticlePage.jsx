@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import ArticlePageImg from './../images/articlePageImg.png'
 import valak from './../images/valak.png'
 import den from './../images/den.png'
-
+import { ArticleDataContext } from '../providers/ArticleDataProvider';
 
 function ArticlePage(props) {
+
+    const { ArticleData, setArticleData } = useContext(ArticleDataContext);
     return (
         <div className='articlePage'>
             <div className="articlePage__header">
@@ -17,15 +19,16 @@ function ArticlePage(props) {
                     </svg>
                 </div>
             </div>
-            <h2 className='articlePage__title'>Как создавать сайты легко</h2>
-            <span className="articles__date">{props.date}21.06.2020</span>
-            <span className="articles__categories">создание сайтов</span>
+            <h2 className='articlePage__title'>{ArticleData.title}</h2>
+            <span className="articles__date">{ArticleData.date}</span>
+            <span className="articles__categories">{ArticleData.category}</span>
             <div className="articlePage__content">
                 <div className="articlePage__contentInner">
+                    <img className='ArticlePageImg' src={ArticleData.img} alt="ArticlePageImg" />
                     <p className='articlePage__content-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
-                    <img className='ArticlePageImg' src={ArticlePageImg} alt="ArticlePageImg" />
+                    <img className='ArticlePage__Img' src={ArticlePageImg} alt="ArticlePageImg" />
                     <p className='articlePage__content-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
                 </div>
                 <div className="recommendations">
@@ -52,7 +55,7 @@ function ArticlePage(props) {
                 <div className="comentaries__Container">
                     <div className="comentaries__Input">
                         <h6 className="comentaries__Title">Обсуждение</h6>
-                        <textarea className='comentaries__TextInput' placeholder = "Текст комментария"></textarea>
+                        <textarea className='comentaries__TextInput' placeholder="Текст комментария"></textarea>
 
                         <button className='BTNSend'>Отправить</button>
                     </div>
@@ -60,7 +63,7 @@ function ArticlePage(props) {
                         <div className="comentaries__Item">
                             <div className="comentaries__Item-inner">
                                 <div className="comentaries__Autor">
-                                    <img src={valak} alt="comentaries__AutorIMG" />
+                                    <img className="comentaries__AutorIMG" src={valak} alt="comentaries__AutorIMG" />
                                     <div className="comentaries__AutorDesc">
                                         <h6 className="comentaries__Name">Дмитрий Валак</h6>
                                         <span className="comentaries__date">1 неделю назад</span>
@@ -72,13 +75,27 @@ function ArticlePage(props) {
                             <div className="comentaries__Item">
                                 <div className="comentaries__Item-inner">
                                     <div className="comentaries__Autor">
-                                        <img src={den} alt="comentaries__AutorIMG" />
+                                        <img className="comentaries__AutorIMG" src={den} alt="comentaries__AutorIMG" />
                                         <div className="comentaries__AutorDesc">
                                             <h6 className="comentaries__Name">Джонни</h6>
                                             <span className="comentaries__date">1 неделю назад</span>
                                         </div>
                                     </div>
                                     <div className="comentaries__text">Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</div>
+                                    <a className="articles__link">ответить</a>
+                                </div>
+
+                            </div>
+                            <div className="comentaries__Item">
+                                <div className="comentaries__Item-inner">
+                                    <div className="comentaries__Autor">
+                                        <img className="comentaries__AutorIMG" src={den} alt="comentaries__AutorIMG" />
+                                        <div className="comentaries__AutorDesc">
+                                            <h6 className="comentaries__Name">Джонни</h6>
+                                            <span className="comentaries__date">1 неделю назад</span>
+                                        </div>
+                                    </div>
+                                    <div className="comentaries__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, esse.</div>
                                     <a className="articles__link">ответить</a>
                                 </div>
 

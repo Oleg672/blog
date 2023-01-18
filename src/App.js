@@ -4,6 +4,8 @@ import Main from './components/Main';
 import { SidebarProvider } from './providers/SidebarProvider';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import { ArticleDataProvider } from './providers/ArticleDataProvider';
+import { CategoriesProvider } from './providers/CategoriesProvider';
 
 
 function App() {
@@ -11,7 +13,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <SidebarProvider>
-          < Main />
+          <ArticleDataProvider>
+            <CategoriesProvider>
+              < Main />
+            </CategoriesProvider>
+          </ArticleDataProvider >
         </SidebarProvider >
       </BrowserRouter>
     </div>
