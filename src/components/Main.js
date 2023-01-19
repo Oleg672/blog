@@ -4,6 +4,7 @@ import Home from './RightContent';
 import Sidebar from './Sidebar';
 import Media from 'react-media';
 import Works from './MyWorks/Works';
+import Profile from './Profile';
 import ArticlePage from './ArticlePage';
 import { SidebarContext } from '../providers/SidebarProvider';
 import { Routes, Route } from "react-router-dom";
@@ -35,9 +36,9 @@ function Main() {
                     <Routes>
                         <Route path='/blog' element={<Home />} />
                         <Route path='/' element={<Home />} />
-                        <Route path='Works' element={<Works />} />
+                        <Route path='works' element={<Works />} />
                         <Route path='ArticlePage' element={<ArticlePage props />} />
-                        {/* <Route exact path="" component={Works1}/> */}
+                        <Route path='profile' element={<Profile />} />
                     </Routes>
 
 

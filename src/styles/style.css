@@ -130,6 +130,9 @@ a {
 }
 .sidebar__buttons {
   margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .sidebar__btn {
   padding: 13px 25px;
@@ -147,7 +150,6 @@ a {
   cursor: pointer;
 }
 .sidebar .clr-red {
-  margin-right: 20px;
   background-color: #ed3024;
 }
 
@@ -233,6 +235,7 @@ a {
 }
 .navigation__menu-article .navigation__item:last-child {
   margin-bottom: 0;
+  position: relative;
 }
 .navigation__search {
   background-color: #202020;
@@ -842,6 +845,56 @@ a {
   margin-bottom: 4px;
 }
 
+.profile__content {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 60px;
+  align-items: center;
+}
+.profile__inputContainer {
+  position: relative;
+  width: 100%;
+}
+.profile__inputContainer .BTNSend {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.profile__input {
+  background-color: inherit;
+  font-family: "Roboto";
+  font-style: normal;
+  margin-right: 0;
+  color: #d2d2d2;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #3f3f3f;
+  font-weight: 400;
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 13px;
+  padding-bottom: 9px;
+  max-width: 340px;
+}
+.profile__avatar {
+  display: block;
+}
+.profile__NewImg {
+  display: block;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #107eff;
+  margin-top: 15px;
+}
+
 @media (max-width: 425px) {
   .main {
     width: 100%;
@@ -1016,5 +1069,8 @@ a {
   }
   .works__articleButtons {
     margin-top: 10px;
+  }
+  .works__description {
+    padding: 15px 10px;
   }
 }/*# sourceMappingURL=style.css.map */

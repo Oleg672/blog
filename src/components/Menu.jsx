@@ -17,6 +17,7 @@ function Menu(props) {
             </li>
             <li className="navigation__item"> <a href="#"onClick={() => {setOpened(!Opened);}}>Обо мне</a></li>
             <li className="navigation__item"> <a href="#"onClick={() => {setOpened(!Opened);}}>Реклама</a></li>
+            <li className="navigation__item" onClick={() => {setOpened(!Opened);}}><NavLink to="/profile">Профиль</NavLink></li>
 
         </ul>
     );
