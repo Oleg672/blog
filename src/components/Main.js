@@ -8,6 +8,7 @@ import Profile from './Profile';
 import ArticlePage from './ArticlePage';
 import { SidebarContext } from '../providers/SidebarProvider';
 import { Routes, Route } from "react-router-dom";
+import SendMessage from './SendMessage';
 
 
 function Main() {
@@ -39,6 +40,7 @@ function Main() {
                         <Route path='works' element={<Works />} />
                         <Route path='ArticlePage' element={<ArticlePage props />} />
                         <Route path='profile' element={<Profile />} />
+                        <Route path='SendMessage' element={<SendMessage />} />
                     </Routes>
 
 

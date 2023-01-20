@@ -855,7 +855,7 @@ a {
     &__inputContainer {
         position: relative;
         width: 100%;
-        
+
         .BTNSend {
             margin-top: 20px;
             cursor: pointer;
@@ -1076,6 +1076,24 @@ a {
         }
         &__description {
             padding: 15px 10px;
+        }
+    }
+    .profile {
+        padding: 15px;
+        padding-top: 0;
+        position: relative;
+        &__content {
+            flex-direction: column-reverse;
+            margin-top: 15px;
+            position: relative;
+        }
+        &__avatarContainer{
+            width: 100%;
+            position: relative;
+        }
+        &__avatar{
+            width: 100%;
+            display: block;
         }
     }
 }

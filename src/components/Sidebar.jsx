@@ -5,6 +5,7 @@ import Menu from "./Menu";
 import Media from 'react-media';
 import { SidebarContext } from '../providers/SidebarProvider';
 import { Link, NavLink } from "react-router-dom";
+import SendMessage from "./SendMessage";
 
 function Sidebar(props) {
     const { Opened, setOpened } = useContext(SidebarContext)
@@ -41,6 +42,7 @@ function Sidebar(props) {
                     Front-end разработчик. Практик верстки сайтов.
                     Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
                 </p>
+
                 <div className="sidebar__buttons">
                     <NavLink to="/works" className="sidebar__btn clr-red" onClick={() => {
                         setOpened(!Opened);
@@ -48,8 +50,9 @@ function Sidebar(props) {
                     }
                     }>Мои работы</NavLink>
 
-                    <button className="sidebar__btn">Написать мне</button>
+                    <NavLink to="/SendMessage" className="sidebar__btn">Написать мне</NavLink>
                 </div>
+
             </div>
         </div >
     );

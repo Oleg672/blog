@@ -1073,4 +1073,22 @@ a {
   .works__description {
     padding: 15px 10px;
   }
+  .profile {
+    padding: 15px;
+    padding-top: 0;
+    position: relative;
+  }
+  .profile__content {
+    flex-direction: column-reverse;
+    margin-top: 15px;
+    position: relative;
+  }
+  .profile__avatarContainer {
+    width: 100%;
+    position: relative;
+  }
+  .profile__avatar {
+    width: 100%;
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */
