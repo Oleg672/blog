@@ -937,27 +937,28 @@ a {
         color: #b3b3b3;
         text-align: center;
     }
-    .BTNSend{
+    .BTNSend {
         position: relative;
-        &__wrap{
+        &__wrap {
             width: 340px;
         }
     }
-    &__e-mail::before{
-        content: 'e-mail: ';
+    &__e-mail::before {
+        content: "e-mail: ";
     }
-    &__e-mail{
+    &__e-mail {
         position: relative;
-     
     }
-    &__phone::before{
-        content: 'тел: ';
+    &__phone::before {
+        content: "тел: ";
         margin-left: 20px;
     }
-    &__phone{
+    &__phone {
         position: relative;
-     
     }
+}
+.hidden {
+    display: none;
 }
 @media (max-width: 425px) {
     .main {

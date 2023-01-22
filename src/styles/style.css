@@ -959,6 +959,10 @@ a {
   position: relative;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 425px) {
   .main {
     width: 100%;

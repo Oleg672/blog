@@ -11,9 +11,9 @@ import { useState } from "react";
 function Sidebar(props) {
     const { Opened, setOpened } = useContext(SidebarContext);
     const [Modal, setModal] = useState(false);
-    const openedModal = () => {
-        setModal(!Modal)
-    }
+   
+        
+    
     return (
         <div className="sidebar">
 
@@ -55,11 +55,11 @@ function Sidebar(props) {
                     }
                     }>Мои работы</NavLink>
 
-                    <button onClick={openedModal} className="sidebar__btn">Написать мне</button>
+                    <button onClick={()=>setModal(!Modal)} className="sidebar__btn">Написать мне</button>
 
 
                 </div>
-                {Modal ? <SendMessage openedModal1={openedModal} /> : null}
+                 <SendMessage ModalActive={Modal} setModalActive={setModal} />
 
             </div>
         </div >
