@@ -40,7 +40,6 @@ function Main() {
                         <Route path='works' element={<Works />} />
                         <Route path='ArticlePage' element={<ArticlePage props />} />
                         <Route path='profile' element={<Profile />} />
-                        <Route path='SendMessage' element={<SendMessage />} />
                     </Routes>
 
 

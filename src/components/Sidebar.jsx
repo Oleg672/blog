@@ -4,11 +4,16 @@ import sidebar__foto from "../images/foto.png"
 import Menu from "./Menu";
 import Media from 'react-media';
 import { SidebarContext } from '../providers/SidebarProvider';
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Route, Routes } from "react-router-dom";
 import SendMessage from "./SendMessage";
+import { useState } from "react";
 
 function Sidebar(props) {
-    const { Opened, setOpened } = useContext(SidebarContext)
+    const { Opened, setOpened } = useContext(SidebarContext);
+    const [Modal, setModal] = useState(false);
+    const openedModal = () => {
+        setModal(!Modal)
+    }
     return (
         <div className="sidebar">
 
@@ -50,8 +55,11 @@ function Sidebar(props) {
                     }
                     }>Мои работы</NavLink>
 
-                    <NavLink to="/SendMessage" className="sidebar__btn">Написать мне</NavLink>
+                    <button onClick={openedModal} className="sidebar__btn">Написать мне</button>
+
+
                 </div>
+                {Modal ? <SendMessage openedModal1={openedModal} /> : null}
 
             </div>
         </div >

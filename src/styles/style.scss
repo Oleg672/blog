@@ -895,6 +895,70 @@ a {
         margin-top: 15px;
     }
 }
+.message {
+    width: 500px;
+    height: 342px;
+    min-height: 342px;
+    position: absolute;
+    background-color: #181818;
+    padding: 10px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 555;
+    box-shadow: 0px 15px 25px rgb(0 0 0 / 35%);
+    &__close {
+        background-color: inherit;
+        border: none;
+        position: relative;
+        right: 0;
+        display: flex;
+        margin-left: auto;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .profile__input {
+        color: white;
+    }
+    .profile__inputContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__contacts {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        margin-top: 40px;
+        color: #b3b3b3;
+        text-align: center;
+    }
+    .BTNSend{
+        position: relative;
+        &__wrap{
+            width: 340px;
+        }
+    }
+    &__e-mail::before{
+        content: 'e-mail: ';
+    }
+    &__e-mail{
+        position: relative;
+     
+    }
+    &__phone::before{
+        content: 'тел: ';
+        margin-left: 20px;
+    }
+    &__phone{
+        position: relative;
+     
+    }
+}
 @media (max-width: 425px) {
     .main {
         width: 100%;
@@ -1087,11 +1151,11 @@ a {
             margin-top: 15px;
             position: relative;
         }
-        &__avatarContainer{
+        &__avatarContainer {
             width: 100%;
             position: relative;
         }
-        &__avatar{
+        &__avatar {
             width: 100%;
             display: block;
         }
