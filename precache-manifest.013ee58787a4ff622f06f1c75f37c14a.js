@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "e7591001b79d72fee401",
-    "url": "/blog/static/css/main.1ef4a8a7.chunk.css"
+    "revision": "72d9b52eb665b4a164a4",
+    "url": "/blog/static/css/main.8a678344.chunk.css"
   },
   {
-    "revision": "e7591001b79d72fee401",
-    "url": "/blog/static/js/main.e7591001.chunk.js"
+    "revision": "72d9b52eb665b4a164a4",
+    "url": "/blog/static/js/main.72d9b52e.chunk.js"
   },
   {
     "revision": "c0dba26f4ccf71cea450",
     "url": "/blog/static/js/1.c0dba26f.chunk.js"
   },
   {
-    "revision": "8fdfa9628eb8e297ef13",
-    "url": "/blog/static/js/2.8fdfa962.chunk.js"
+    "revision": "66d8610e6202e892ec60",
+    "url": "/blog/static/js/2.66d8610e.chunk.js"
   },
   {
     "revision": "bad2b9ff50c88b561bf5",
@@ -68,31 +68,31 @@ self.__precacheManifest = [
     "url": "/blog/static/media/articlePageImg.31afe34c.png"
   },
   {
-    "revision": "d529b18d71fd671389e52ed5c2328620",
-    "url": "/blog/static/media/inst.d529b18d.svg"
-  },
-  {
-    "revision": "63be1e2b3e9df594fcc4f5adfabfa801",
-    "url": "/blog/static/media/vk.63be1e2b.svg"
+    "revision": "d70b6361b009e36f7d45b3fa1dd6592a",
+    "url": "/blog/static/media/pint.d70b6361.svg"
   },
   {
     "revision": "c025fd535ca10dfea26dc10e27017d6d",
     "url": "/blog/static/media/rect.c025fd53.svg"
   },
   {
+    "revision": "d529b18d71fd671389e52ed5c2328620",
+    "url": "/blog/static/media/inst.d529b18d.svg"
+  },
+  {
     "revision": "39054c3530d8e366ed74bafa2f16a493",
     "url": "/blog/static/media/videoPlay.39054c35.svg"
   },
   {
-    "revision": "d70b6361b009e36f7d45b3fa1dd6592a",
-    "url": "/blog/static/media/pint.d70b6361.svg"
+    "revision": "63be1e2b3e9df594fcc4f5adfabfa801",
+    "url": "/blog/static/media/vk.63be1e2b.svg"
   },
   {
     "revision": "59fbf8dde70f5635a0d0057e096182ed",
     "url": "/blog/static/media/close.59fbf8dd.svg"
   },
   {
-    "revision": "88567ce27646c6e6e3bda87c7a29bccd",
+    "revision": "37a9241d62a0d04ffd42106f77d8c5d2",
     "url": "/blog/index.html"
   }
 ];
