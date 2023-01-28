@@ -1,6 +1,7 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Article from './Article';
 import { CategoriesContext } from '../providers/CategoriesProvider';
+import ArticlesFooterBtn from './ArticlesFooterBtn';
 function Articles() {
     const { Categories, setCategories } = useContext(CategoriesContext)
     const articles = [
@@ -165,22 +166,28 @@ function Articles() {
             opened: true
         }
     ]
-
+    const [PagePagination, setPagePagination] = useState(1)
+    
+    const ArticlePagination = (Page) => {
+        console.log(Page)
+        setPagePagination(Page);
+    }
 
     return (
         <main className='articles'>
             <ul className="articles__list">
 
-                {Categories ? 
+                {Categories ?
                     articles.filter(elem => elem.category === Categories).map((obj) => (
                         < Article key={obj.id} obj={obj} />
 
                     ))
                     :
                     articles.map((obj) => (
-                        < Article key={obj.id} obj={obj} />))
-                    }
+                        (obj.id <= PagePagination * 5 && obj.id > (PagePagination - 1) * 5) ? < Article key={obj.id} obj={obj} /> : null))
+                }
             </ul>
+            <ArticlesFooterBtn PagePagination1={PagePagination} ArticlePagination1={ArticlePagination} countPage={articles.length/5} />
         </main>
     );
 }

@@ -27,9 +27,6 @@ function Article({ obj }) {
                             date: obj.date,
                             category: obj.category
                         });
-
-
-                        console.log(ArticleData);
                     }}>читать</NavLink>) : (<a href="#" className="articles__link">оставить комментарий</a>)}
 
                 </div>

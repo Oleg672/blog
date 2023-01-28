@@ -11,7 +11,6 @@ class RightContent extends Component {
                 <PictureStoty />
                 <AddMessage />
                 <Articles />
-                <ArticlesFooterBtn />
             </>
 
 
