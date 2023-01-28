@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "ee73113156053db5c407",
-    "url": "/blog/static/css/main.96a3d554.chunk.css"
+    "revision": "70e653514c87a3396b03",
+    "url": "/blog/static/css/main.3d4b3695.chunk.css"
   },
   {
-    "revision": "ee73113156053db5c407",
-    "url": "/blog/static/js/main.ee731131.chunk.js"
+    "revision": "70e653514c87a3396b03",
+    "url": "/blog/static/js/main.70e65351.chunk.js"
   },
   {
     "revision": "c0dba26f4ccf71cea450",
     "url": "/blog/static/js/1.c0dba26f.chunk.js"
   },
   {
-    "revision": "66d8610e6202e892ec60",
-    "url": "/blog/static/js/2.66d8610e.chunk.js"
+    "revision": "52dbbfb1b3dce13ca681",
+    "url": "/blog/static/js/2.52dbbfb1.chunk.js"
   },
   {
     "revision": "bad2b9ff50c88b561bf5",
@@ -68,18 +68,6 @@ self.__precacheManifest = [
     "url": "/blog/static/media/articlePageImg.31afe34c.png"
   },
   {
-    "revision": "d529b18d71fd671389e52ed5c2328620",
-    "url": "/blog/static/media/inst.d529b18d.svg"
-  },
-  {
-    "revision": "63be1e2b3e9df594fcc4f5adfabfa801",
-    "url": "/blog/static/media/vk.63be1e2b.svg"
-  },
-  {
-    "revision": "d70b6361b009e36f7d45b3fa1dd6592a",
-    "url": "/blog/static/media/pint.d70b6361.svg"
-  },
-  {
     "revision": "c025fd535ca10dfea26dc10e27017d6d",
     "url": "/blog/static/media/rect.c025fd53.svg"
   },
@@ -88,11 +76,23 @@ self.__precacheManifest = [
     "url": "/blog/static/media/videoPlay.39054c35.svg"
   },
   {
+    "revision": "63be1e2b3e9df594fcc4f5adfabfa801",
+    "url": "/blog/static/media/vk.63be1e2b.svg"
+  },
+  {
+    "revision": "d529b18d71fd671389e52ed5c2328620",
+    "url": "/blog/static/media/inst.d529b18d.svg"
+  },
+  {
+    "revision": "d70b6361b009e36f7d45b3fa1dd6592a",
+    "url": "/blog/static/media/pint.d70b6361.svg"
+  },
+  {
     "revision": "59fbf8dde70f5635a0d0057e096182ed",
     "url": "/blog/static/media/close.59fbf8dd.svg"
   },
   {
-    "revision": "af022ac6e890fa9b31d37a9e81c5409e",
+    "revision": "616cb392ad7d7cf0c1c45d9b550f646d",
     "url": "/blog/index.html"
   }
 ];
