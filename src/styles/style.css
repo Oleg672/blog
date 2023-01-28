@@ -977,6 +977,22 @@ a {
   scale: 0.5;
 }
 
+.social__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  cursor: auto;
+}
+
+.social__container svg {
+  margin-left: 7px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
 @media (max-width: 425px) {
   .main {
     width: 100%;
