@@ -3,6 +3,7 @@ import Article from './Article';
 import { CategoriesContext } from '../providers/CategoriesProvider';
 import ArticlesFooterBtn from './ArticlesFooterBtn';
 function Articles() {
+    const countArticlePage = 5;
     const { Categories, setCategories } = useContext(CategoriesContext)
     const articles = [
         {
@@ -166,28 +167,56 @@ function Articles() {
             opened: true
         }
     ]
+    const articlesFilter = [];
+    const buttons = [];
+
+
+
+    function Filter(articles, articlesFilter, buttons) {
+        articlesFilter = Categories ?
+            articles.filter(elem => elem.category === Categories)
+                .map((obj) => (
+                    articlesFilter.push(obj)
+
+                )) : null;
+    }
+    function countButtons(articlesFilter, articles, buttons) {
+        if (articlesFilter.length != 0)
+            for (let i = 1; i <= (articlesFilter.length/ countArticlePage)+1; i++) {
+                buttons.push(i);
+            }
+        else {
+            for (let i = 1; i <= (articles.length / countArticlePage)+1; i++) {
+                buttons.push(i);
+            }
+        }
+    }
     const [PagePagination, setPagePagination] = useState(1)
-    
+
     const ArticlePagination = (Page) => {
-        console.log(Page)
         setPagePagination(Page);
     }
-
+    Filter(articles, articlesFilter)
+    countButtons(articlesFilter, articles, buttons)
+console.log(articlesFilter);
     return (
         <main className='articles'>
             <ul className="articles__list">
-
+                    {/* ДОДЕЛАТЬ */}
                 {Categories ?
-                    articles.filter(elem => elem.category === Categories).map((obj) => (
-                        < Article key={obj.id} obj={obj} />
-
-                    ))
+                    articlesFilter.map((obj,index) => (
+                        (index < PagePagination * countArticlePage && index >= (PagePagination-1) * countArticlePage)
+                        ? < Article key={obj.id} obj={obj} /> : null))
                     :
                     articles.map((obj) => (
-                        (obj.id <= PagePagination * 5 && obj.id > (PagePagination - 1) * 5) ? < Article key={obj.id} obj={obj} /> : null))
+                        (obj.id <= PagePagination * countArticlePage && obj.id > (PagePagination - 1) * countArticlePage)
+                            ? < Article key={obj.id} obj={obj} /> : null))
                 }
             </ul>
-            <ArticlesFooterBtn PagePagination1={PagePagination} ArticlePagination1={ArticlePagination} countPage={articles.length/5} />
+            {articlesFilter? 
+            <ArticlesFooterBtn PagePagination1={PagePagination} ArticlePagination1={ArticlePagination} buttons={buttons} />
+            :
+            <ArticlesFooterBtn PagePagination1={PagePagination} ArticlePagination1={ArticlePagination} buttons={buttons} />}
         </main>
     );
 }

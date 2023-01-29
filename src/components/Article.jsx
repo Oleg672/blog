@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { ArticleDataContext } from '../providers/ArticleDataProvider';
-function Article({ obj }) {
+function Article({ obj ,index}) {
     const { ArticleData, setArticleData } = useContext(ArticleDataContext)
-
     return (
         <li className="articles__item">
             {(obj.img) ? (<img src={process.env.PUBLIC_URL + obj.img} alt="contetnt" className="articles__picture" />) : (<></>)}
@@ -17,7 +16,7 @@ function Article({ obj }) {
                         {(obj.category) ? (<span className="articles__categories">{obj.category}</span>) : (<></>)}
                     </div>
                     {(obj.opened) ? (<NavLink to="/ArticlePage" className="articles__link" onClick={() => {
-
+                        
                         setArticleData({
                             ...ArticleData,
                             title: obj.title,
@@ -31,7 +30,9 @@ function Article({ obj }) {
 
                 </div>
             </div>
+
         </li >
+
     );
 }
 
