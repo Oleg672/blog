@@ -1,10 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import ArticlePageImg from './../images/articlePageImg.png'
-import valak from './../images/valak.png'
-import den from './../images/den.png'
-import { ArticleDataContext } from '../providers/ArticleDataProvider';
-import SendMessage from './SendMessage';
+import ArticlePageImg from '../../images/articlePageImg.png'
+import valak from '../../images/valak.png'
+import den from '../../images/den.png'
+import { ArticleDataContext } from '../../providers/ArticleDataProvider';
+import SendMessage from '../SendMessage';
 import CommentariesInput from '../CommentariesInput';
 
 

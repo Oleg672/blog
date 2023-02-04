@@ -5,7 +5,7 @@ import Sidebar from './Sidebar';
 import Media from 'react-media';
 import Works from './MyWorks/Works';
 import Profile from './Profile';
-import ArticlePage from './ArticlePage';
+import ArticlePage from './MyArticles/ArticlePage';
 import { SidebarContext } from '../providers/SidebarProvider';
 import { Routes, Route } from "react-router-dom";
 

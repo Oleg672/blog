@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CommentariesInput from '../CommentariesInput';
-import { ArticleDataContext } from '../providers/ArticleDataProvider';
+import { ArticleDataContext } from '../../providers/ArticleDataProvider';
 import VideoPlayer from './VideoPlayer';
 function Article({ obj ,index}) {
     const { ArticleData, setArticleData } = useContext(ArticleDataContext);

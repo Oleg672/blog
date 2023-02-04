@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import Article from './Article';
-import { CategoriesContext } from '../providers/CategoriesProvider';
+import { CategoriesContext } from '../../providers/CategoriesProvider';
 import ArticlesFooterBtn from './ArticlesFooterBtn';
 function Articles() {
     const countArticlePage = 5;

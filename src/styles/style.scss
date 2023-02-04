@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: #181818;
     color: white;
@@ -13,6 +14,9 @@ p {
 a {
     color: inherit;
     text-decoration: none;
+}
+button{
+    cursor: pointer;
 }
 .textarea__input{
     max-height: 350px;
@@ -446,6 +450,7 @@ a {
         margin-left: 35px;
         font-size: 15px;
         position: relative;
+        text-transform: lowercase;
     }
     &__categories::before {
         content: "";
