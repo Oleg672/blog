@@ -28,7 +28,7 @@ function ArticlePage(props) {
                 {ArticleData.category?<span className="articles__categories">{ArticleData.category}</span>:null}
                 <div className="articlePage__content">
                     <div className="articlePage__contentInner">
-                    {ArticleData.img?<img className='ArticlePageImg' src={ArticleData.img} alt="ArticlePageImg" />:null}
+                    {ArticleData.img?<img className='ArticlePageImg' src={process.env.PUBLIC_URL + ArticleData.img} alt="ArticlePageImg" />:null}
                         <p className='articlePage__content-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
 
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit. Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.</p>
