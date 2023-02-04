@@ -15,7 +15,7 @@ function Profile() {
                 </div>
                 <div className="profile__avatarContainer">
                     <img className="profile__avatar" src={avatar} alt="avatar"  />
-                    <a className='profile__NewImg' href="#">выбрать аватар</a>
+                    <a className='profile__NewImg' href="/">выбрать аватар</a>
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 
 
 function Main() {
-    const { Opened, setOpened } = useContext(SidebarContext)
+    const { Opened, } = useContext(SidebarContext)
     const [worksOpened, setWorksOpened] = React.useState(false);
 
     return (

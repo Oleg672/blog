@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { SidebarContext } from '../providers/SidebarProvider';
 import { CategoriesContext } from '../providers/CategoriesProvider';
-function Menu(props) {
+function Menu() {
     const { Opened, setOpened } = useContext(SidebarContext)
     
     const { Categories, setCategories } = useContext(CategoriesContext)

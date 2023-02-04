@@ -9,32 +9,32 @@ function PictureStoty(props) {
         <div className="picture__story">
             <ul className="picture__list">
                 <li className="picture__item">
-                    <a href="#">
+                    <a href="/">
                         <h4 className="picture__title">Отдыхаю на природе</h4>
-                        <img className='picture__storyImg' src={Picture4} alt="picture-story" />
+                        <img className='picture__storyImg' src={Picture4} alt="story" />
                         <p className='picture__storyDate'>21.09.2022</p>
                     </a>
                 </li>
                 <li className="picture__item">
-                    <a href="#">
+                    <a href="/">
                         <h4 className="picture__title">Заканчиваю
                             сложный проект</h4>
-                        <img className='picture__storyImg' src={Picture3} alt="picture-story" />
+                        <img className='picture__storyImg' src={Picture3} alt="story" />
                         <p className='picture__storyDate'>15.09.2022</p>
                     </a>
                 </li>
                 <li className="picture__item">
-                    <a href="#">
+                    <a href="/">
                         <h4 className="picture__title">Переехал в новую
                             квартиру</h4>
-                        <img className='picture__storyImg' src={Picture2} alt="picture-story" />
+                        <img className='picture__storyImg' src={Picture2} alt="story" />
                         <p className='picture__storyDate'>11.09.2022</p>
                     </a>
                 </li>
                 <li className="picture__item">
-                    <a href="#">
+                    <a href="/">
                         <h4 className="picture__title">Осень пришла!</h4>
-                        <img className='picture__storyImg' src={Picture1} alt="picture-story" />
+                        <img className='picture__storyImg' src={Picture1} alt="story" />
                         <p className='picture__storyDate'>28.08.2022</p>
                     </a>
                 </li>

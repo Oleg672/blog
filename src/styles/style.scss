@@ -654,6 +654,9 @@ a {
         font-size: 12px;
         line-height: 14px;
         color: #ffffff;
+        background-color: inherit;
+        border: none;
+        
     }
     &__share-inner svg {
         margin-left: 7px;
@@ -793,6 +796,7 @@ a {
         margin-bottom: 13px;
         max-height: 400px;
         max-width: 100%;
+        min-width: 100%;
     }
 }
 .BTNSend {

@@ -1,25 +1,19 @@
-import React, { Children, useContext } from "react";
+import React, { useState, useContext } from "react";
 import sidebar__Img from "../images/sidebar.png"
 import sidebar__foto from "../images/foto.png"
+import { SidebarContext } from '../providers/SidebarProvider';
+import SendMessage from "./SendMessage";
 import Menu from "./Menu";
 import Media from 'react-media';
-import { SidebarContext } from '../providers/SidebarProvider';
-import { Link, NavLink, Route, Routes } from "react-router-dom";
-import SendMessage from "./SendMessage";
-import { useState } from "react";
+import {NavLink} from "react-router-dom";
 
 function Sidebar(props) {
     const { Opened, setOpened } = useContext(SidebarContext);
     const [Modal, setModal] = useState(false);
-
-
-
     return (
         <div className="sidebar">
-
             <div className="sidebar__top">
                 <img src={sidebar__Img} alt="" className="sidebar__topImg" />
-
             </div>
             <div className="sidebar__inner">
                 <div className="sidebar__mobileWrapp">
@@ -32,11 +26,9 @@ function Sidebar(props) {
                     </div>
                 </div>
                 <div className="sidebar__social">
-
                     <a href="#" className="sidebar__social-inst"></a>
                     <a href="#" className="sidebar__social-vk"></a>
                     <a href="#" className="sidebar__social-pinterest"></a>
-
                 </div>
                 <Media query="(max-width: 425px)" render={() =>
                 (
@@ -47,7 +39,6 @@ function Sidebar(props) {
                     Front-end разработчик. Практик верстки сайтов.
                     Созданием сайтов занимаюсь с 2012 года. Работал в нескольких ИТ компаниях и наработал более 10 000 часов в создании сайтов различной сложности.
                 </p>
-
                 <div className="sidebar__buttons">
                     <NavLink to="/works" className="sidebar__btn clr-red" onClick={() => {
                         setOpened(!Opened);
@@ -56,10 +47,7 @@ function Sidebar(props) {
                     }>Мои работы</NavLink>
 
                     <button onClick={() => setModal(!Modal)} className="sidebar__btn">Написать мне</button>
-
-
                 </div>
-
                 <SendMessage ModalActive={Modal} setModalActive={setModal} >
                     <div className="profile__inputContainer">
                         <input type="text" className="profile__input" placeholder='Ф.И.О.' />

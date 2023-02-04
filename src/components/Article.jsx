@@ -29,7 +29,7 @@ function Article({ obj ,index}) {
                             category: obj.category
                         });
                     }}>читать</NavLink>) : (
-                    <button onClick={()=>setComments(!comments)}  className="articles__link">оставить комментарий</button> 
+                    <button onClick={()=>setComments(!comments)}  className="articles__link">{comments?"скрыть комментарий":"оставить комментарий"}</button> 
                     
                     )}
 
