@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "2bcbbc8585a8d79e9ab1",
-    "url": "/blog/static/css/main.ff1704ed.chunk.css"
+    "revision": "3246348cfae975eb3be1",
+    "url": "/blog/static/css/main.0f698be6.chunk.css"
   },
   {
-    "revision": "2bcbbc8585a8d79e9ab1",
-    "url": "/blog/static/js/main.2bcbbc85.chunk.js"
+    "revision": "3246348cfae975eb3be1",
+    "url": "/blog/static/js/main.3246348c.chunk.js"
   },
   {
-    "revision": "5bff56686b744a6e6287",
-    "url": "/blog/static/js/1.5bff5668.chunk.js"
+    "revision": "5df50f20135844d1f62b",
+    "url": "/blog/static/js/1.5df50f20.chunk.js"
   },
   {
-    "revision": "00ae1a4e0210456c7c2b",
-    "url": "/blog/static/css/2.19ec3546.chunk.css"
+    "revision": "e9593c5c02b5c035d3a8",
+    "url": "/blog/static/css/2.c88398d9.chunk.css"
   },
   {
-    "revision": "00ae1a4e0210456c7c2b",
-    "url": "/blog/static/js/2.00ae1a4e.chunk.js"
+    "revision": "e9593c5c02b5c035d3a8",
+    "url": "/blog/static/js/2.e9593c5c.chunk.js"
   },
   {
-    "revision": "c72011784bfe98ce9cd9",
-    "url": "/blog/static/js/runtime~main.c7201178.js"
+    "revision": "4887c6bbaaaab1e13fce",
+    "url": "/blog/static/js/runtime~main.4887c6bb.js"
   },
   {
     "revision": "7fa7e722fa9df5bf30da08e6c3405785",
@@ -72,8 +72,8 @@ self.__precacheManifest = [
     "url": "/blog/static/media/articlePageImg.31afe34c.png"
   },
   {
-    "revision": "d529b18d71fd671389e52ed5c2328620",
-    "url": "/blog/static/media/inst.d529b18d.svg"
+    "revision": "63be1e2b3e9df594fcc4f5adfabfa801",
+    "url": "/blog/static/media/vk.63be1e2b.svg"
   },
   {
     "revision": "d70b6361b009e36f7d45b3fa1dd6592a",
@@ -84,15 +84,15 @@ self.__precacheManifest = [
     "url": "/blog/static/media/rect.c025fd53.svg"
   },
   {
+    "revision": "d529b18d71fd671389e52ed5c2328620",
+    "url": "/blog/static/media/inst.d529b18d.svg"
+  },
+  {
     "revision": "39054c3530d8e366ed74bafa2f16a493",
     "url": "/blog/static/media/videoPlay.39054c35.svg"
   },
   {
-    "revision": "63be1e2b3e9df594fcc4f5adfabfa801",
-    "url": "/blog/static/media/vk.63be1e2b.svg"
-  },
-  {
-    "revision": "26cb3e94c9796f2616208685c8558e42",
+    "revision": "cd595be0c878506f70e98c1cb309c22e",
     "url": "/blog/index.html"
   }
 ];
