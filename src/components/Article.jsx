@@ -1,8 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import CommentariesInput from '../CommentariesInput';
 import { ArticleDataContext } from '../providers/ArticleDataProvider';
 function Article({ obj ,index}) {
-    const { ArticleData, setArticleData } = useContext(ArticleDataContext)
+    const { ArticleData, setArticleData } = useContext(ArticleDataContext);
+    const [comments, setComments] = useState(false);
     return (
         <li className="articles__item">
             {(obj.img) ? (<img src={process.env.PUBLIC_URL + obj.img} alt="contetnt" className="articles__picture" />) : (<></>)}
@@ -26,9 +28,13 @@ function Article({ obj ,index}) {
                             date: obj.date,
                             category: obj.category
                         });
-                    }}>читать</NavLink>) : (<a href="#" className="articles__link">оставить комментарий</a>)}
+                    }}>читать</NavLink>) : (
+                    <button onClick={()=>setComments(!comments)}  className="articles__link">оставить комментарий</button> 
+                    
+                    )}
 
                 </div>
+                {comments?<CommentariesInput/>:null}
             </div>
 
         </li >

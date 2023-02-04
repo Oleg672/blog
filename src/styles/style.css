@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+.textarea__input {
+  max-height: 350px;
+}
+
 .main {
   max-width: 1000px;
   width: 1000px;
@@ -465,6 +469,9 @@ a {
   text-align: right;
   color: #107eff;
   text-decoration: none;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 }
 
 .NavBtn {
@@ -755,9 +762,6 @@ a {
   grid-row-gap: 20px;
 }
 
-.comentaries__Container {
-  margin-top: 30px;
-}
 .comentaries__Title {
   font-family: "Roboto";
   font-style: normal;
@@ -765,6 +769,7 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #fff;
+  margin-top: 30px;
 }
 .comentaries__Input {
   width: 100%;
@@ -803,6 +808,7 @@ a {
   box-shadow: 0px 4px 15px -7px rgba(48, 55, 201, 0.3);
   border-radius: 5px;
   padding: 8px 15px;
+  cursor: pointer;
   display: block;
 }
 
@@ -934,7 +940,8 @@ a {
   z-index: 1;
 }
 .message .profile__input {
-  width: 100%;
+  width: 80%;
+  min-width: 80%;
   color: white;
 }
 .message .profile__inputContainer {

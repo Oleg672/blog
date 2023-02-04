@@ -1,5 +1,4 @@
 import React from 'react';
-import close from '../images/close.svg'
 
 function SendMessage({ ModalActive, setModalActive, children }) {
     return (

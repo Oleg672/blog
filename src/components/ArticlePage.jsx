@@ -5,6 +5,7 @@ import valak from './../images/valak.png'
 import den from './../images/den.png'
 import { ArticleDataContext } from '../providers/ArticleDataProvider';
 import SendMessage from './SendMessage';
+import CommentariesInput from '../CommentariesInput';
 
 
 function ArticlePage(props) {
@@ -57,12 +58,7 @@ function ArticlePage(props) {
                         </div>
                     </div>
                     <div className="comentaries__Container">
-                        <div className="comentaries__Input">
-                            <h6 className="comentaries__Title">Обсуждение</h6>
-                            <textarea className='comentaries__TextInput' placeholder="Текст комментария"></textarea>
-
-                            <button className='BTNSend'>Отправить</button>
-                        </div>
+                        <CommentariesInput />
                         <div className="comentaries">
                             <div className="comentaries__Item">
                                 <div className="comentaries__Item-inner">

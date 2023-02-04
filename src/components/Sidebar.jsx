@@ -64,7 +64,7 @@ function Sidebar(props) {
                     <div className="profile__inputContainer">
                         <input type="text" className="profile__input" placeholder='Ф.И.О.' />
                         <input type="text" className="profile__input" placeholder='Ваш e-mail' />
-                        <textarea type="text" className="profile__input" placeholder='Текст сообщения' />
+                        <textarea type="text" className="profile__input textarea__input" placeholder='Текст сообщения' />
                         <div className="BTNSend__wrap">
                             <button className='BTNSend'>Отправить</button>
                         </div>
