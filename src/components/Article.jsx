@@ -2,13 +2,14 @@ import React, { useContext, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import CommentariesInput from '../CommentariesInput';
 import { ArticleDataContext } from '../providers/ArticleDataProvider';
+import VideoPlayer from './VideoPlayer';
 function Article({ obj ,index}) {
     const { ArticleData, setArticleData } = useContext(ArticleDataContext);
     const [comments, setComments] = useState(false);
     return (
         <li className="articles__item">
             {(obj.img) ? (<img src={process.env.PUBLIC_URL + obj.img} alt="contetnt" className="articles__picture" />) : (<></>)}
-            {(obj.video) ? (<div className="articles__video"><img src={process.env.PUBLIC_URL + obj.video} alt="contetnt" className="articles__picture" /> </div>) : (<></>)}
+            {(obj.poster) ? (<VideoPlayer poster={process.env.PUBLIC_URL + obj.poster} video={obj.video}/>): (<></>)}
             <div className="articles__item-inner">
                 <h2 className='articles__title'>{obj.title}</h2>
                 <p className="articles__description">{obj.description}</p>
@@ -24,6 +25,7 @@ function Article({ obj ,index}) {
                             title: obj.title,
                             img: obj.img,
                             video: obj.video,
+                            poster:obj.poster,
                             description: obj.description,
                             date: obj.date,
                             category: obj.category

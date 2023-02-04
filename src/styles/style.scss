@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -314,6 +315,7 @@ a {
         bottom: 16px;
     }
 }
+
 .addMessage {
     margin-top: 24px;
     background-color: #121212;
@@ -404,6 +406,7 @@ a {
         z-index: 2;
         background-image: url(../images/videoPlay.svg);
     }
+    
     &__item-inner {
         padding: 25px;
         padding-top: 22px;
@@ -792,7 +795,7 @@ a {
         width: 100%;
         display: block;
         height: 20px;
-        margin-top: 15px;
+        margin-top: 20px;
         margin-bottom: 13px;
         max-height: 400px;
         max-width: 100%;

@@ -29,7 +29,8 @@ function Articles() {
         {
             id: 3,
             img: "",
-            video: "/ImagesArticle/contentVideo.png",
+            poster:"/ImagesArticle/contentVideo.png",
+            video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
             title: "Купил новый ноутбук за 150 000 руб",
             description: "",
             date: "22.06.2020",
@@ -69,7 +70,8 @@ function Articles() {
         {
             id: 7,
             img: "",
-            video: "/ImagesArticle/contentVideo.png",
+            poster:"/ImagesArticle/contentVideo.png",
+            video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
             title: "Купил новый ноутбук за 150 000 руб",
             description: "",
             date: "22.06.2020",
@@ -109,7 +111,8 @@ function Articles() {
         {
             id: 11,
             img: "",
-            video: "/ImagesArticle/contentVideo.png",
+            poster:"/ImagesArticle/contentVideo.png",
+            video: "https://media.w3.org/2010/05/sintel/trailer_hd.mp4",
             title: "Купил новый ноутбук за 150 000 руб",
             description: "",
             date: "22.06.2020",
