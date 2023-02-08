@@ -11,7 +11,7 @@ function Gamburger(props) {
             }}> 
             <span class="bar-top opened"></span>
             <span class="bar-mid opened"></span>
-            <span class="bar-bot opened"></span>
+            <span class="bar-bot opened"></span>dddddd
         </div>
     );
 
